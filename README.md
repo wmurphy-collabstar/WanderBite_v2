@@ -6,8 +6,6 @@ WanderBite is an immersive full-stack CRUD web application designed for foodies 
 
 Whether you're planning your next trip or exploring cultures from home, WanderBite offers a fun, interactive way to connect with global cuisine, track your foodie adventures, and share your journey with others.
 
-
-
 ## ✨ Features
 
 - 🌍 Generate a random travel destination
@@ -15,6 +13,9 @@ Whether you're planning your next trip or exploring cultures from home, WanderBi
 - ✅ Manage and complete a personal travel-food bucket list
 - 🔐 Secure login and protected API routes
 - 📦 Full-stack architecture using modern web technologies
+
+## Live Site
+<a target="_blank" href="https://wanderbite.onrender.com/home">Wander Bite Website</a>
 
 ## Figma File
 
