@@ -4,7 +4,7 @@ import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 
 async function createBucketList(bucketList) {
-    const response = await axios.post("http://localhost:8080/bucket-lists/", {
+    const response = await axios.post(`${import.meta.env.VITE_API_URL}/bucket-lists/`, {
         location: bucketList.location,
         image: "",
         name: bucketList.name
@@ -14,7 +14,7 @@ async function createBucketList(bucketList) {
 }
 
 async function addBucketItem({bucketListId, city, itemPlace, itemFood}) {
-    const response = await axios.post(`http://localhost:8080/bucket-lists/${bucketListId}/items`, {
+    const response = await axios.post(`${import.meta.env.VITE_API_URL}/${bucketListId}/items`, {
         city: city,
         location: itemPlace,
         food: itemFood,

@@ -8,11 +8,11 @@ async function toggleCompletion({bucketListId, itemId, completed}){
   console.log(`bucketListId: ${bucketListId}`);
   console.log(`itemId: ${itemId}`);
   if (completed){
-    const incompleteResponse = await axios.put(`http://localhost:8080/bucket-lists/${bucketListId}/items/${itemId}/not-completed`);
+    const incompleteResponse = await axios.put(`${import.meta.env.VITE_API_URL}/bucket-lists/${bucketListId}/items/${itemId}/not-completed`);
     console.log(incompleteResponse.data);
     return incompleteResponse.data;
   }else {
-    const completeResponse = await axios.put(`http://localhost:8080/bucket-lists/${bucketListId}/items/${itemId}/completed`);
+    const completeResponse = await axios.put(`${import.meta.env.VITE_API_URL}/bucket-lists/${bucketListId}/items/${itemId}/completed`);
     console.log(completeResponse.data);
     return completeResponse.data;
   }

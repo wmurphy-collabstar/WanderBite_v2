@@ -6,7 +6,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
 async function fetchBucketLists() {
-    const response = await axios.get("http://localhost:8080/bucket-lists");
+    const response = await axios.get(`${import.meta.env.VITE_API_URL}/bucket-lists`);
     return response.data.bucketLists;
   }
 
